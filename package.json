@@ -4,33 +4,27 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "serve:dev": "nodemon --exec babel-node --presets=es2015 app.js",
-    "knex": "DEBUG=knex:tx knex --knexfile=./config/knex/knexfile.js",
-    "db:migrate:up": "npm run knex -- migrate:latest ",
-    "db:migrate:down": "npm run knex -- migrate:rollback "
+    "serve:dev": "nodemon --exec babel-node --presets=es2015 app.js"
   },
   "author": "Raghav Garg <ansraghav100@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://bitbucket.org/raghavgarg1257/tfc-jstest"
+    "url": "git://github.com:raghavgarg1257/frapp-app"
   },
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
-    "bookshelf": "^0.12.1",
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.0",
-    "knex": "^0.14.4",
     "lodash": "^4.17.5",
     "method-override": "^2.3.10",
     "moment": "^2.21.0",
     "mongoose": "^5.0.11",
     "morgan": "^1.9.0",
-    "mysql": "^2.15.0",
     "validatorjs": "^3.14.2"
   },
   "devDependencies": {
